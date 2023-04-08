@@ -1,0 +1,27 @@
+CREATE DATABASE trade;
+CREATE TABLE registration
+(
+    fname VARCHAR(20) NOT NULL,
+    Lname VARCHAR(20) NOT NULL,
+    email VARCHAR(20) NOT NULL,
+    username VARCHAR(20) NOT NULL,
+    pass VARCHAR(20) NOT NULL,
+    CONSTRAINT PK_REG PRIMARY KEY(email,username)
+);
+CREATE Table Repo
+(
+    repo_name VARCHAR(20) NOT NULL,
+    repo_owner VARCHAR(20) NOT NULL
+);
+CREATE TABLE shiping
+(
+    TimeOfArrival DATE NOT Null,
+    Address VARCHAR(50) NOT NULL PRIMARY KEY,
+    price INT NOT NULL
+);
+CREATE TABLE commodity
+(
+    CommodityName VARCHAR(20) NOT NULL,
+    CommodityStatus VARCHAR(20) NOT NULL
+);
+
